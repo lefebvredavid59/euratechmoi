@@ -53,9 +53,14 @@ class User implements UserInterface
     private $tel;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Enfant", inversedBy="users")
+     * @ORM\OneToMany(targetEntity="App\Entity\Enfant", mappedBy="user")
      */
     private $enfant;
+
+    public function __construct()
+    {
+        $this->enfant = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -171,20 +176,39 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getEnfant(): ?Enfant
+    public function __toString()
+    {
+        return $this->getUsername();
+    }
+
+    /**
+     * @return Collection|Enfant[]
+     */
+    public function getEnfant(): Collection
     {
         return $this->enfant;
     }
 
-    public function setEnfant(?Enfant $enfant): self
+    public function addEnfant(Enfant $enfant): self
     {
-        $this->enfant = $enfant;
+        if (!$this->enfant->contains($enfant)) {
+            $this->enfant[] = $enfant;
+            $enfant->setUser($this);
+        }
 
         return $this;
     }
 
-    public function __toString()
+    public function removeEnfant(Enfant $enfant): self
     {
-        return $this->getUsername();
+        if ($this->enfant->contains($enfant)) {
+            $this->enfant->removeElement($enfant);
+            // set the owning side to null (unless already changed)
+            if ($enfant->getUser() === $this) {
+                $enfant->setUser(null);
+            }
+        }
+
+        return $this;
     }
 }

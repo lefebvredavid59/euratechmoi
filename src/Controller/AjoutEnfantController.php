@@ -18,8 +18,8 @@ class AjoutEnfantController extends AbstractController
 //        $form->handleRequest($request):
 
         if ($form->isSubmitted() && $form->isValid()) {
-            if (!$enfant->getUsers()) {
-                $enfant->addUser($this->getUser());
+            if (!$enfant->getUser()) {
+                $enfant->setUser($this->getUser());
             }
 
             $entityManager = $this->getDoctrine()->getManager();

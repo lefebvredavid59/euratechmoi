@@ -39,14 +39,14 @@ class Enfant
     private $sex;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="enfant")
-     */
-    private $users;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Reservation", inversedBy="enfants")
      */
     private $reservation;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="enfant")
+     */
+    private $user;
 
     public function __construct()
     {
@@ -106,37 +106,6 @@ class Enfant
         return $this;
     }
 
-    /**
-     * @return Collection|User[]
-     */
-    public function getUsers(): Collection
-    {
-        return $this->users;
-    }
-
-    public function addUser(User $user): self
-    {
-        if (!$this->users->contains($user)) {
-            $this->users[] = $user;
-            $user->setEnfant($this);
-        }
-
-        return $this;
-    }
-
-    public function removeUser(User $user): self
-    {
-        if ($this->users->contains($user)) {
-            $this->users->removeElement($user);
-            // set the owning side to null (unless already changed)
-            if ($user->getEnfant() === $this) {
-                $user->setEnfant(null);
-            }
-        }
-
-        return $this;
-    }
-
     public function getReservation(): ?Reservation
     {
         return $this->reservation;
@@ -152,5 +121,17 @@ class Enfant
     public function __toString()
     {
         return $this->getNom();
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
+
+        return $this;
     }
 }

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64cff0f7-e2a8-4b5e-be74-5394fd932d56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AjoutEnfantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AjoutEnfantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AjoutEnfantController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Enfant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Enfant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/AjoutEnfantType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AjoutEnfantFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AjoutEnfantFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AjoutEnfantFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accueil/membre.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/membre.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +163,7 @@
       <updated>1581527427035</updated>
       <workItem from="1581527428218" duration="3389000" />
       <workItem from="1581532667351" duration="6220000" />
-      <workItem from="1581540824261" duration="7300000" />
+      <workItem from="1581540824261" duration="8455000" />
     </task>
     <servers />
   </component>

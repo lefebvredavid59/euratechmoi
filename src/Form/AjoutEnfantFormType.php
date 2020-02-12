@@ -14,7 +14,7 @@ class AjoutEnfantFormType extends AbstractType
         $builder
             ->add('nom')
             ->add('prenom')
-            ->add('naissance')
+//            ->add('naissance')
             ->add('sex')
         ;
     }
