@@ -29,8 +29,19 @@
         <div class="card-header">
             Ajouter votre enfant
         </div>
-        <div class="card-body">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
 
-        </div>
+        {{ form_start(AjoutEnfantForm) }}
+        {{ form_row(AjoutEnfantForm.nom) }}
+        {{ form_row(AjoutEnfantForm.prenom) }}
+        {{ form_row(AjoutEnfantForm.naissance) }}
+        {{ form_row(AjoutEnfantForm.sex) }}
+
+        <button class="btn btn-primary">Ajouter</button>
+        {{ form_end(AjoutEnfantForm) }}
     </div>
 {% endblock %}

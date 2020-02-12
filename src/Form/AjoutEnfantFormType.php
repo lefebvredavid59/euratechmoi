@@ -2,12 +2,12 @@
 
 namespace App\Form;
 
-use App\Entity\Enfant;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use App\Entity\Enfant;
 
-class AjoutEnfantType extends AbstractType
+class AjoutEnfantFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {

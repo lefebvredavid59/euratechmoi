@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64cff0f7-e2a8-4b5e-be74-5394fd932d56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AjoutEnfantController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Enfant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Enfant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AjoutEnfantType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AjoutEnfantFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accueil/membre.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/membre.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +149,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BlogOdin59" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce-symfony" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -162,7 +163,7 @@
       <updated>1581527427035</updated>
       <workItem from="1581527428218" duration="3389000" />
       <workItem from="1581532667351" duration="6220000" />
-      <workItem from="1581540824261" duration="4102000" />
+      <workItem from="1581540824261" duration="7300000" />
     </task>
     <servers />
   </component>
@@ -170,10 +171,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="207" key="FileChooserDialogImpl" timestamp="1581539060789">
+    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581545732724">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="686" y="207" key="FileChooserDialogImpl/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581539060789" />
+    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581545732724" />
+    <state x="623" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581547703629">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="623" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581547703629" />
+    <state x="686" y="207" key="FileChooserDialogImpl" timestamp="1581546068048">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="686" y="207" key="FileChooserDialogImpl/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581546068048" />
+    <state x="436" y="182" key="IDE.errors.dialog" timestamp="1581547843876">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="436" y="182" key="IDE.errors.dialog/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581547843876" />
+    <state x="704" y="282" key="NewPhpClassDialog" timestamp="1581547679933">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="704" y="282" key="NewPhpClassDialog/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581547679933" />
     <state x="576" y="176" width="768" height="678" key="find.popup" timestamp="1581544025444">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
