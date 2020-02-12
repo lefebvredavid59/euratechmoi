@@ -39,7 +39,7 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
 
     public function supports(Request $request)
     {
-        return 'app_login' === $request->attributes->get('_route')
+        return 'login' === $request->attributes->get('_route')
             && $request->isMethod('POST');
     }
 
@@ -94,11 +94,11 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
             return new RedirectResponse($targetPath);
         }
 
-        new RedirectResponse($this->urlGenerator->generate('membre'));
+        new RedirectResponse($this->urlGenerator->generate('accueil'));
     }
 
     protected function getLoginUrl()
     {
-        return $this->urlGenerator->generate('membre');
+        return $this->urlGenerator->generate('accueil');
     }
 }

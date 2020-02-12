@@ -3,8 +3,10 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
+
+    <h1 class="text-center">Programme disponible</h1>
+    <div class="row">
     {% for programme in programmes %}
-    <h1>Programme disponible</h1>
     <div class="card" style="width: 18rem;">
         <img src="{{ programme.image }}"width="300px" class="card-img-top" alt="{{ programme.titre }}">
         <div class="card-body">
@@ -14,4 +16,5 @@
         </div>
     </div>
     {% endfor %}
+    </div>
 {% endblock %}

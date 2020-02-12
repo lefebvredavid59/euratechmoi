@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64cff0f7-e2a8-4b5e-be74-5394fd932d56" name="Default Changelist" comment="" />
+    <list default="true" id="64cff0f7-e2a8-4b5e-be74-5394fd932d56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +18,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -129,6 +138,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1XiSTD3LiKdcf6bH4IFizHr6Qjm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -136,6 +146,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BlogOdin59" />
   </component>
@@ -151,7 +162,7 @@
       <updated>1581527427035</updated>
       <workItem from="1581527428218" duration="3389000" />
       <workItem from="1581532667351" duration="6220000" />
-      <workItem from="1581540824261" duration="2535000" />
+      <workItem from="1581540824261" duration="4102000" />
     </task>
     <servers />
   </component>
@@ -163,9 +174,9 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="686" y="207" key="FileChooserDialogImpl/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581539060789" />
-    <state x="576" y="176" width="768" height="678" key="find.popup" timestamp="1581541361834">
+    <state x="576" y="176" width="768" height="678" key="find.popup" timestamp="1581544025444">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="576" y="176" width="768" height="678" key="find.popup/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581541361834" />
+    <state x="576" y="176" width="768" height="678" key="find.popup/0.-1350.2400.1300/0.0.1920.1030@0.0.1920.1030" timestamp="1581544025444" />
   </component>
 </project>
