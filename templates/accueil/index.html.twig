@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    {% for programme in programmes %}
+    <h1>Programme disponible</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ programme.image }}"width="300px" class="card-img-top" alt="{{ programme.titre }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ programme.titre }}</h5>
+            <p class="card-text">{{ programme.description }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
