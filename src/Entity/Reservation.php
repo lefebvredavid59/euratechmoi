@@ -18,10 +18,10 @@ class Reservation
      */
     private $id;
 
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $reserver;
+//    /**
+//     * @ORM\Column(type="integer", nullable=true)
+//     */
+//    private $reserver;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Enfant", mappedBy="reservation")
@@ -44,17 +44,17 @@ class Reservation
         return $this->id;
     }
 
-    public function getReserver(): ?int
-    {
-        return $this->reserver;
-    }
-
-    public function setReserver(?int $reserver): self
-    {
-        $this->reserver = $reserver;
-
-        return $this;
-    }
+//    public function getReserver(): ?int
+//    {
+//        return $this->reserver;
+//    }
+//
+//    public function setReserver(?int $reserver): self
+//    {
+//        $this->reserver = $reserver;
+//
+//        return $this;
+//    }
 
     /**
      * @return Collection|Enfant[]

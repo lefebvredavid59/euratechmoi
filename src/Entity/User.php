@@ -5,7 +5,9 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -176,11 +178,6 @@ class User implements UserInterface
         return $this;
     }
 
-    public function __toString()
-    {
-        return $this->getUsername();
-    }
-
     /**
      * @return Collection|Enfant[]
      */
@@ -210,5 +207,10 @@ class User implements UserInterface
         }
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->getUsername();
     }
 }

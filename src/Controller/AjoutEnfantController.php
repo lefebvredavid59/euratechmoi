@@ -7,17 +7,17 @@ namespace App\Controller;
 use App\Entity\Enfant;
 use App\Form\AjoutEnfantFormType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 
 class AjoutEnfantController extends AbstractController
 {
-    public function AjoutEnfant(Request $request)
+    public function AjoutEnfant()
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
         $enfant = new Enfant();
         $form = $this->createForm(AjoutEnfantFormType::class, $enfant);
-//        $form->handleRequest($request):
 
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted()&& $form->isValid()) {
+
             if (!$enfant->getUser()) {
                 $enfant->setUser($this->getUser());
             }
@@ -29,7 +29,7 @@ class AjoutEnfantController extends AbstractController
 
         }
 
-        return $this->render('accueil/membre.html.twig', [
+        return $this->render('accueil/membre.html.twig',[
             'AjoutEnfantForm' => $form->createView(),
         ]);
     }

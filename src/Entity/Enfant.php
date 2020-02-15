@@ -48,10 +48,10 @@ class Enfant
      */
     private $user;
 
-    public function __construct()
-    {
-        $this->users = new ArrayCollection();
-    }
+//    public function __construct()
+//    {
+//        $this->users = new ArrayCollection();
+//    }
 
     public function getId(): ?int
     {
