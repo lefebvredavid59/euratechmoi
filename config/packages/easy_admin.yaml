@@ -6,3 +6,4 @@ easy_admin:
         - App\Entity\Reservation
         - App\Entity\User
         - App\Entity\Enfant
+        - App\Entity\Carousel

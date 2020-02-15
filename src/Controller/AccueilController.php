@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\CarouselRepository;
 use App\Repository\ProgrammeRepository;
 use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -12,13 +13,16 @@ class AccueilController extends AbstractController
     /**
      * @Route("/", name="accueil")
      */
-    public function index(ProgrammeRepository $programmeRepository)
+    public function index(ProgrammeRepository $programmeRepository,
+                            CarouselRepository $carouselRepository)
     {
         $programmes = $programmeRepository->findAll();
+        $carousels = $carouselRepository->findAll();
 
         return $this->render('accueil/index.html.twig', [
             'controller_name' => 'AccueilController',
             'programmes' => $programmes,
+            'carousels' => $carousels,
         ]);
     }
 
