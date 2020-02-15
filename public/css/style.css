@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden;*/
+}
+
+#ateliers{
+    background-color: rgba(78,103,169,0.8);
+}
+
+#test {
+    background: no-repeat fixed center;
+    background-image: url(https://www.euratechkids.com/assets/images/img_parallax_secondpictures.jpg);
+}
+
+hr {
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+}
+
+.card{
+    transition: .5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-h{
+    color: white;
+    background-color: #FFC107 !important;
+}
+
+.btn-eura{
+    color: white !important;
+    background-color: rgb(78,103,169) !important;
+}
+
+.btn-eura:hover{
+    color: white !important;
+    background-color: rgb(62, 81, 133) !important;
+}
+
+.card-title{
+    color: #9C4E95;
+}
+
+#map{
+    clip-path: polygon(100% 0%, 100% 100%, -500% 100%);
+}
+
+.btn-outline-eura{
+    color: rgb(78,103,169)  !important;
+    border-color: rgb(78,103,169) !important;
+}
+
+.btn-outline-eura:hover {
+    background-color: rgb(78,103,169) !important;
+    color: white !important;
+}
+
+#navbar{
+    position: fixed;
+    float: top !important;
+    z-index: 99;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+#contact{
+    overflow: hidden;
+}
+
+#carousel{
+    padding-top: 67.688px;
+}
+
+.carousel-caption{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 !important;
+    text-align: left !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+}
+
+.caption-text {
+    position: absolute;
+    top: 50%; 
+    left: 50% !important; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%);
+}
+
+#intro .lead{
+    font-size: 2rem;
+}
+
+#intro span{
+    color: rgb(78,103,169);
+    font-weight: 400;
+}
+
+#intro hr {
+    background-color: rgba(23, 162, 184, .8);
+    height: 5px;
+    /* width: 230px; */
+}

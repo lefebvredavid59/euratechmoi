@@ -1,0 +1,20 @@
+$("document").ready(function(){ 
+	$("#at1").mouseenter(function(){       
+		$("#at1-h").addClass('card-h');      
+	});     
+	$("#at1").mouseleave(function(){       
+		$("#at1-h").removeClass('card-h');      
+    });
+    $("#at2").mouseenter(function(){       
+		$("#at2-h").addClass('card-h');      
+	});     
+	$("#at2").mouseleave(function(){       
+		$("#at2-h").removeClass('card-h');      
+    });
+    $("#at3").mouseenter(function(){       
+		$("#at3-h").addClass('card-h');      
+	});     
+	$("#at3").mouseleave(function(){       
+		$("#at3-h").removeClass('card-h');      
+	});
+});
