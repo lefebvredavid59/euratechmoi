@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Membre{% endblock %}
+
+{% block body %}
+
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    {{ form_start(EditEnfant) }}
+    {{ form_errors(EditEnfant) }}
+    {{ form_row(EditEnfant.nom) }}
+    {{ form_row(EditEnfant.prenom) }}
+    {{ form_row(EditEnfant.naissance) }}
+    {{ form_row(EditEnfant.sex) }}
+
+    <button class="btn btn-primary">Modifier</button>
+    {{ form_end(EditEnfant) }}
+{% endblock %}

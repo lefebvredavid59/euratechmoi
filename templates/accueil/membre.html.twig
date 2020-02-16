@@ -40,24 +40,31 @@
                 <td>{{ enfant.prenom }}</td>
                 <td>{{ enfant.sex }}</td>
                 <td>{{ enfant.naissance|date("d/m/Y") }}</td>
-                <td>Modif</td>
-                <td><form action="{{ path('sup_enfant',{ 'id': enfant.id }) }}" method="post" class="d-inline">
-                    <input type="hidden" name="token" value="{{ csrf_token('delete') }}">
-                    <button class="btn btn-danger btn-sm">Supprimer</button></form>
+
+                <td>
+                    <a href="{{ path('edit_enfant',{ 'id': enfant.id }) }}"><button type="button" class="btn btn-dark">Modifier</button></a>
                 </td>
+                <td>
+                    <form action="{{ path('sup_enfant',{ 'id': enfant.id }) }}" method="POST" class="d-inline">
+                        <input type="hidden" name="token" value="{{ csrf_token('delete') }}">
+                        <button type="button" class="btn btn-danger btn-sm">Supprimer</button>
+                    </form>
+                </td>
+
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
 
-        {% for message in app.flashes('success') %}
+        {% for message in app.flashes('modif') %}
             <div class="alert alert-success">
                 {{ message }}
             </div>
         {% endfor %}
 
         {{ form_start(AjoutEnfantForm) }}
+        {{ form_errors(AjoutEnfantForm) }}
         {{ form_row(AjoutEnfantForm.nom) }}
         {{ form_row(AjoutEnfantForm.prenom) }}
         {{ form_row(AjoutEnfantForm.naissance) }}
@@ -65,5 +72,4 @@
 
         <button class="btn btn-primary">Ajouter</button>
         {{ form_end(AjoutEnfantForm) }}
-
 {% endblock %}
