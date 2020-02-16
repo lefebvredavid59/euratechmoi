@@ -45,9 +45,9 @@ hr {
     color: #9C4E95;
 }
 
-#map{
-    clip-path: polygon(100% 0%, 100% 100%, -500% 100%);
-}
+/*#map{*/
+/*    clip-path: polygon(100% 0%, 100% 100%, -500% 100%);*/
+/*}*/
 
 .btn-outline-eura{
     color: rgb(78,103,169)  !important;

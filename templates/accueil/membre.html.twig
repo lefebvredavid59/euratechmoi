@@ -4,37 +4,58 @@
 
 {% block body %}
 
-<table class="table">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">Email</th>
-        <th scope="col">Nom</th>
-        <th scope="col">Prenom</th>
-        <th scope="col">Telephone</th>
-        <th scope="col">Enfant</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th>{{ app.user.email }}</th>
-        <td>{{ app.user.nom }}</td>
-        <td>{{ app.user.prenom }}</td>
-        <td>{{ app.user.tel }}</td>
-        <td>{{ app.user.enfant }}</td>
-    </tr>
-    </tbody>
-</table>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Telephone</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>{{ app.user.email }}</th>
+            <td>{{ app.user.nom }}</td>
+            <td>{{ app.user.prenom }}</td>
+            <td>{{ app.user.tel }}</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Date de naissance</th>
+            <th scope="col">Modifier</th>
+            <th scope="col">Supprimer</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for enfant in app.user.enfant %}
+            <tr>
+                <td>{{ enfant.nom }}</td>
+                <td>{{ enfant.prenom }}</td>
+                <td>{{ enfant.sex }}</td>
+                <td>{{ enfant.naissance|date("d/m/Y") }}</td>
+                <td>Modif</td>
+                <td><form action="{{ path('sup_enfant',{ 'id': enfant.id }) }}" method="post" class="d-inline">
+                    <input type="hidden" name="token" value="{{ csrf_token('delete') }}">
+                    <button class="btn btn-danger btn-sm">Supprimer</button></form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 
-    <div class="card text-center">
-        <div class="card-header">
-            Ajouter votre enfant
-        </div>
+
         {% for message in app.flashes('success') %}
             <div class="alert alert-success">
                 {{ message }}
             </div>
         {% endfor %}
-
 
         {{ form_start(AjoutEnfantForm) }}
         {{ form_row(AjoutEnfantForm.nom) }}
@@ -44,5 +65,5 @@
 
         <button class="btn btn-primary">Ajouter</button>
         {{ form_end(AjoutEnfantForm) }}
-    </div>
+
 {% endblock %}
